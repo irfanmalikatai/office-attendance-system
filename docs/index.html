@@ -81,7 +81,7 @@ may process the following information:
 
 <ul>
 <li>Active website domains.</li>
-<li>Full website URLs, including page paths and query parameters.</li>
+<li>The extension processes active website domains during attendance sessions. It sends the normalized website domain only, not full URLs, page paths, query parameters, or URL fragments.</li>
 <li>Browser tab activity and website navigation events.</li>
 <li>Website usage information used to calculate activity duration.</li>
 <li>Website access restriction policies supplied by the desktop application.</li>
@@ -93,12 +93,7 @@ records to an employee account or attendance session.
 </p>
 
 <p>
-Full URLs can sometimes contain personal or sensitive
-information. The extension attempts to remove URL
-credentials, fragments, and certain known sensitive
-query parameters before transmission. However, this
-filtering cannot guarantee removal of all sensitive
-information.
+The extension reads the active tab URL locally to identify its normalized website domain. Domain activity messages do not include full URLs, page paths, query parameters, or URL fragments.
 </p>
 
 <h2>3. How Information Is Used</h2>
